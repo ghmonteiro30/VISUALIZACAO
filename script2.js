@@ -71,4 +71,5 @@ d3.json("https://gist.githubusercontent.com/emanueles/591172235e5c05c814752b7536
     .style("font-size", "11px")
     .text(d => d.life_expect.toFixed(1));
 
-  return svg.node();
+  document.body.appendChild(svg.node());
+
