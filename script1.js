@@ -73,5 +73,5 @@ d3.json("https://gist.githubusercontent.com/emanueles/591172235e5c05c814752b7536
     .attr("fill", "#333")
     .text(d => d.country);
 
-  document.getElementById("grafico").appendChild(svg.node());
+  document.getElementById("grafico1").appendChild(svg.node());
 });
