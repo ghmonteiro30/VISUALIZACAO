@@ -73,3 +73,4 @@ d3.json("https://gist.githubusercontent.com/emanueles/591172235e5c05c814752b7536
 
   document.getElementById("grafico2").appendChild(svg.node());
 
+});
