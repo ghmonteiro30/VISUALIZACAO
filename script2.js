@@ -1,4 +1,5 @@
-{
+d3.json("https://gist.githubusercontent.com/emanueles/591172235e5c05c814752b7536155617/raw/8acfbc3b59204a9b7495a9a779012fadca811dce/countries2000.json").then(countries => {
+
   const latestData = Array.from(
     d3.group(countries, d => d.country),
     ([, values]) => values.sort((a, b) => d3.descending(a.year, b.year))[0]
@@ -71,4 +72,3 @@
     .text(d => d.life_expect.toFixed(1));
 
   return svg.node();
-}
