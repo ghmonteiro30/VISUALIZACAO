@@ -55,4 +55,16 @@ body {
 }
 
 .main-content h2 {
-  color: #04447B
+  color: #04447B;
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #04447B;
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
