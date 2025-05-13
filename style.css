@@ -13,12 +13,11 @@ footer {
   background-color: #04447B;
   color: white;
 }
-
-h1, h2 {
-  color: white;  /* Alterado para branco */
+h1{
+  color: white;
 }
-
 h2 {
+    color: #04447B;
   margin-top: 20px;
 }
 
