@@ -15,7 +15,7 @@ footer {
 }
 
 h1, h2 {
-  color: ##FFFFFF;
+  color: white;  /* Alterado para branco */
 }
 
 h2 {
@@ -39,6 +39,12 @@ span {
   height: 100vh;
   position: fixed;
   color: white;
+  
+  /* Centralizando o conteúdo dentro da sidebar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar h1 {
@@ -57,13 +63,10 @@ span {
   margin-top: 20px;
 }
 
-.sidebar .university-name {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
+.sidebar .university-name,
 .sidebar .department {
   font-style: italic;
+  margin-top: 10px;
 }
 
 /* Área principal do conteúdo */
