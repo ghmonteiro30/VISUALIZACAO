@@ -36,7 +36,7 @@ span {
   background-color: #005DAD;  /* Azul escuro */
   padding: 20px;
   width: 250px;
-  height: 100vh;
+  height: 150vh;
   position: fixed;
   color: white;
   
@@ -55,6 +55,7 @@ span {
 .sidebar .info {
   font-size: 1.2rem;
   margin-bottom: 10px;
+  align-items: left;
 }
 
 .sidebar .university-logo {
