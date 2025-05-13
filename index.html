@@ -5,11 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Perfil do Estudante</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Referência ao Vega-Lite e Vega-Embed -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5.24.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.6.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.0"></script>
 </head>
 <body>
 
@@ -27,57 +22,15 @@
     <p class="department">Departamento de Computação</p>
   </div>
 
-  <!-- Área principal para o gráfico -->
+  <!-- Área principal para conteúdo -->
   <div class="main-content">
-    <div class="graph-container">
-      <h2>Gráfico de Fertilidade vs Expectativa de Vida (1990)</h2>
-      <p>Este gráfico mostra a relação entre a taxa de fertilidade e a expectativa de vida de vários países no ano de 1990.</p>
-    </div>
-
-    <!-- Div para o gráfico -->
-    <div id="chart"></div>
+    <h2>Informações e Visualizações</h2>
+    <p>Aqui podem ser exibidos gráficos, visualizações de dados ou outras informações do estudante.</p>
   </div>
 
   <footer>
     © 2025 - Página de Perfil do Estudante
   </footer>
-
-  <!-- Script para criar o gráfico com Vega-Lite -->
-  <script>
-    const countries = [
-      // Exemplo de dados para 1990
-      { year: 1990, fertility: 6.3, life_expect: 62.1, country: 'Country A' },
-      { year: 1990, fertility: 5.5, life_expect: 65.2, country: 'Country B' },
-      { year: 1990, fertility: 7.1, life_expect: 58.3, country: 'Country C' },
-      { year: 1990, fertility: 4.8, life_expect: 72.4, country: 'Country D' }
-      // Adicione mais dados conforme necessário
-    ];
-
-    const chartSpec = {
-      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-      "mark": "circle",
-      "data": {
-        "values": countries.filter(d => d.year === 1990)
-      },
-      "encoding": {
-        "x": { "field": "fertility", "type": "quantitative", "title": "Fertilidade" },
-        "y": { "field": "life_expect", "type": "quantitative", "title": "Expectativa de Vida" },
-        "color": { "field": "country", "type": "nominal", "title": "País" },
-        "tooltip": [
-          { "field": "country", "type": "nominal", "title": "País" },
-          { "field": "fertility", "type": "quantitative", "title": "Fertilidade" },
-          { "field": "life_expect", "type": "quantitative", "title": "Expectativa de Vida" }
-        ]
-      },
-      "width": 600,
-      "height": 400
-    };
-
-    // Renderiza o gráfico
-    vegaEmbed('#chart', chartSpec).then(result => {
-      console.log('Gráfico renderizado com sucesso!');
-    }).catch(console.error);
-  </script>
 
 </body>
 </html>
