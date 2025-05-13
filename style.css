@@ -8,7 +8,7 @@ body {
 }
 
 footer {
-  text-align: down;
+  text-align: center;
   padding: 20px;
   background-color: #04447B;
   color: white;
@@ -55,7 +55,7 @@ span {
 .sidebar .info {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  align-items: left;
+  align-items: center;
 }
 
 .sidebar .university-logo {
