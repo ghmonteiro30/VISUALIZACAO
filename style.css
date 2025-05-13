@@ -7,43 +7,17 @@ body {
   height: 100vh;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #04447B;
-  color: white;
-}
-h1{
-  color: white;
-}
-h2 {
-    color: #04447B;
-  margin-top: 20px;
-}
-
-p {
-  font-size: 1rem;
-  color: #333;
-  align-items: left;
-}
-
-span {
-  color: white;
-}
-
 /* Barra lateral */
 .sidebar {
   background-color: #005DAD;  /* Azul escuro */
   padding: 20px;
   width: 250px;
-  height: 150vh;
+  height: 100%;
   position: fixed;
   color: white;
-  
-  /* Centralizando o conteúdo dentro da sidebar */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -55,21 +29,20 @@ span {
 .sidebar .info {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  align-items: center;
+  text-align: center;
 }
 
 .sidebar .university-logo {
   width: 120px;
   height: auto;
   margin-top: 20px;
-  align-items: center;
 }
 
 .sidebar .university-name,
 .sidebar .department {
   font-style: italic;
   margin-top: 10px;
-  align-items: center;
+  text-align: center;
 }
 
 /* Área principal do conteúdo */
@@ -78,18 +51,8 @@ span {
   padding: 20px;
   flex-grow: 1;
   background-color: #F0F0F0; /* Fundo cinza claro */
+  color: #333;
 }
 
-.graph-container {
-  margin-bottom: 20px;
-}
-
-#chart {
-  margin-top: 20px;
-  width: 100%;
-  height: 400px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 10px;
-}
+.main-content h2 {
+  color: #04447B
