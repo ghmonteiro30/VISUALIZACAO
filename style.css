@@ -64,23 +64,7 @@ footer {
   padding: 20px;
   background-color: #04447B;
   color: white;
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
-}
-
-.graficos{
-   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-}
-
-.graph-container {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
 }
