@@ -81,11 +81,3 @@ iframe {
   border: none;
   margin-bottom: 20px;
 }
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #04447B;
-  color: white;
-  margin-top: auto; /* Faz com que o rodapé fique no final da página */
-}
