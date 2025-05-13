@@ -69,9 +69,18 @@ footer {
   bottom: 0;
 }
 
-graficos{
+.graficos{
    width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
+}
+
+.graph-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
