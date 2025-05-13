@@ -1,10 +1,10 @@
-/* Estilos Gerais */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   height: 100vh;
+  overflow: auto;
 }
 
 /* Barra lateral */
@@ -47,11 +47,12 @@ body {
 
 /* Área principal do conteúdo */
 .main-content {
-  margin-left: 270px; /* Espaço para a barra lateral */
+  margin-left: 270px;
   padding: 20px;
   flex-grow: 1;
-  background-color: #F0F0F0; /* Fundo cinza claro */
-  color: #333;
+  background-color: #F0F0F0;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .main-content h2 {
@@ -68,3 +69,10 @@ footer {
   width: 100%;
   bottom: 0;
 }
+
+iframe {
+  width: 100%;
+  min-height: 600px;
+  border: none;
+}
+
