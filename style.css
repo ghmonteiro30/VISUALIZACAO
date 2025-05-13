@@ -57,15 +57,17 @@ span {
 }
 
 .sidebar .university-logo {
-  width: 120px; /* Reduzindo o tamanho da logo */
+  width: 120px;
   height: auto;
   margin-top: 20px;
+  align-items: center;
 }
 
 .sidebar .university-name,
 .sidebar .department {
   font-style: italic;
   margin-top: 10px;
+  align-items: center;
 }
 
 /* Área principal do conteúdo */
