@@ -3,10 +3,8 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  height: 100vh;
-  overflow: auto;
+  min-height: 100vh;
 }
-
 /* Barra lateral */
 .sidebar {
   background-color: #005DAD;  /* Azul escuro */
@@ -46,13 +44,17 @@ body {
 }
 
 /* Área principal do conteúdo */
-.main-content {
-  margin-left: 270px;
-  padding: 20px;
+.wrapper {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
+  margin-left: 270px; /* para dar espaço à sidebar fixa */
   background-color: #F0F0F0;
-  min-height: 100vh;
-  overflow-x: hidden;
+}
+
+.main-content {
+  padding: 20px;
+  flex: 1;
 }
 
 .main-content h2 {
@@ -65,10 +67,6 @@ footer {
   padding: 20px;
   background-color: #04447B;
   color: white;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
 }
 
 
