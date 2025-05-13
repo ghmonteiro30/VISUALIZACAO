@@ -1,8 +1,46 @@
 body {
-  font-family: sans-serif;
-  margin: 40px;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #005DAD, #04447B);
+  color: #fff;
 }
 
-svg {
-  border: 1px solid #ccc;
+.profile-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff10;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.university-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: 2em;
+  color: #FAC900;
+}
+
+.info {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.info span {
+  color: #FAC900;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #cccccc;
 }
